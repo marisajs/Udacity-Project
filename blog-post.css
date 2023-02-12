@@ -1,0 +1,61 @@
+h1,h2,h3{color: #be2583;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+p,ul, blockquote{color: #be2583;font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.container{
+    display:grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+    "hd hd hd hd"
+    "sd main main main"
+    "ft ft ft ft";
+    grid-gap: 10px;
+}
+    .header{
+        grid-area: hd;
+        border: 3px solid #76b5c5;
+        margin: 1em;
+        padding: .5em;
+        padding-bottom: 2em;
+        height: 100px;
+        text-align: center;
+    }
+    .sidebar{
+        grid-area: sd;
+        border: 3px solid #76b5c5;
+        margin: 1em;
+        margin-top: 5em;
+        padding: 1em;
+        height: 100;
+        width: 100px;
+        background-color: #76b5c5;
+    }
+    .content{
+        grid-area: main;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 1em;
+        margin: 1em;
+        margin-top: 5em;
+        border: 3px solid #76b5c5;
+    }
+    .footer{
+        grid-area: ft;
+        margin: 1em; 
+    }
+img{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+input[type="button"]{
+    padding:5px 15px;
+    background:plum;
+    border:0 none;
+    border-radius: 5px;
+    padding:5px 15px;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    color: #be2583;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
